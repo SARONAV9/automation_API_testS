@@ -21,18 +21,31 @@ class Test(object):
         setting = yaml.safe_load(key_file)
         self.access_token = setting["key"]
 
-    def test_get_users_code_200(self):
+    # Get users list, status code is 200
+    def test_get_users_list(self):
         params = {"format": format, "access-token": self.access_token}
         response = requests.get(self.url, params=params)
         assert response.status_code == 200
 
+        # Get users list, status code is 404
+        params = {"format": format, "access-token": self.access_token, "accept": "application/json"}
+        response = requests.patch(self.url, params=params)
+        assert response.status_code == 404
+
+    # Get a user, status code is 200
     @pytest.mark.parametrize("user_id",[3425])
-    def test_get_a_user_code_200(self, user_id):
+    def test_get_a_user(self, user_id):
         params = {"format":self.format,"access-token":self.access_token,"id":user_id}
         response = requests.get(self.url, params=params)
         assert response.status_code == 200
 
-    # Create a user, get status code 201
+        # Try to get a user, status code is 400
+        headers = {"Host": ""}
+        params = {"format":self.format,"access-token":self.access_token,"id":user_id}
+        response = requests.get(self.url, params=params, headers=headers)
+        assert response.status_code == 400
+
+    # Create a user, status code is 201
     def test_create_a_user(self):
         headers = {"Content-Type": "application/json; charset=utf-8"}
         data = {
@@ -49,12 +62,12 @@ class Test(object):
         response = requests.get(self.url, params=params)
         assert response.status_code == 200
 
-        # Try to create an existing user, get status code 422
+        # Try to create an existing user, status code is 422
         params = {"format":self.format,"access-token":self.access_token,}
         response = requests.post(self.url, params=params, data=data)
         assert response.status_code == 422
 
-        # Create a user with wrong token, get status code 401
+        # Create a user with wrong token, status code is 401
         params = {"format":self.format,"access-token":"safa",}
         response = requests.post(self.url, params=params, data=data)
         assert response.status_code == 401

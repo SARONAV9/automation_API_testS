@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b130598-fb3b-48f6-bc4d-156a3b656f55" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Gorest_Requests/test_gorest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gorest_Requests/get_user_list.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gorest_Requests/test_gorest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gorest_Requests/test_gorest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +30,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python tests.Python tests for test_gorest.Test.test_create_a_user_code_201">
+  <component name="RunManager" selected="Python tests.Python tests for test_gorest.Test.test_get_users_list">
     <configuration name="Python tests for Gorest_Requests.test_gorest.Test" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="automation_API_tests" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -46,7 +45,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for Gorest_Requests.test_gorest.Test" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_gorest.Test.test_create_a_user" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="automation_API_tests" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -56,35 +55,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Gorest_Requests.test_gorest.Test&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for Gorest_Requests.test_gorest.Test.test_create_a_user_code_201" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="automation_API_tests" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Gorest_Requests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Gorest_Requests.test_gorest.Test.test_create_a_user_code_201&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for Gorest_Requests.test_gorest.Test.test_get_users_code_200" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="automation_API_tests" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Gorest_Requests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Gorest_Requests.test_gorest.Test.test_get_users_code_200&quot;" />
+      <option name="_new_target" value="&quot;test_gorest.Test.test_create_a_user&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -116,13 +87,41 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for test_gorest.Test.test_get_users_code_200" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="automation_API_tests" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Gorest_Requests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_gorest.Test.test_get_users_code_200&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_gorest.Test.test_get_users_list" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="automation_API_tests" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Gorest_Requests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_gorest.Test.test_get_users_list&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_gorest.Test.test_get_users_list" />
+        <item itemvalue="Python tests.Python tests for test_gorest.Test.test_get_users_code_200" />
+        <item itemvalue="Python tests.Python tests for test_gorest.Test.test_create_a_user" />
         <item itemvalue="Python tests.Python tests for test_gorest.Test.test_create_a_user_code_201" />
         <item itemvalue="Python tests.Python tests for test_gorest.Test.test_create_a_user_code_422" />
-        <item itemvalue="Python tests.Python tests for Gorest_Requests.test_gorest.Test" />
-        <item itemvalue="Python tests.Python tests for Gorest_Requests.test_gorest.Test.test_create_a_user_code_201" />
-        <item itemvalue="Python tests.Python tests for Gorest_Requests.test_gorest.Test.test_get_users_code_200" />
       </list>
     </recent_temporary>
   </component>
