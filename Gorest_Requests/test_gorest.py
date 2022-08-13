@@ -58,7 +58,6 @@ class Tests(object):
         data = {"gender": "male"}
         params = {"format": self.format, "access-token": self.access_token, "name": name}
         response = requests.patch(self.url + str(user_id), params=params, data=data)
-        print(response.json())
         assert response.status_code == 200
 
         # Try to get a user, status code is 400
