@@ -1,4 +1,3 @@
-
 from datetime import datetime
 import requests
 import yaml
@@ -7,11 +6,12 @@ now = datetime.now()
 random_text = now.strftime("%H%M%S")
 
 name = "name" + random_text,
-email = "www." + random_text + "name@emale.com",
+email = "www." + random_text + "name@email.com",
 gender = "male",
 status = "active"
 
-class Test(object):
+
+class Tests(object):
     format = "json"
     url = "https://gorest.co.in/public/v2/users/"
 
@@ -21,33 +21,44 @@ class Test(object):
         self.access_token = setting["key"]
 
     def test_requests(self):
-
-        # Get users list, status code is 200
+        # Get list users, status code is 200
         params = {"format": format, "access-token": self.access_token}
         response = requests.get(self.url, params=params)
         assert response.status_code == 200
 
-        # Get users list, status code is 404
+        # Get list users, status code is 404
         params = {"format": format, "access-token": self.access_token, "accept": "application/json"}
         response = requests.patch(self.url, params=params)
         assert response.status_code == 404
 
-        # Create a user, status code is 201
+        # Create user, status code is 201
         data = {
             "name": name,
             "email": email,
             "gender": gender,
-            "status": status
-        }
+            "status": status}
         params = {"format": self.format, "access-token": self.access_token}
         response = requests.post(self.url, params=params, data=data)
         assert response.status_code == 201
         r = response.json()
         user_id = (r["id"])
 
-        # Get a user, status code is 200
+        # Get user, status code is 200
         params = {"format": self.format, "access-token": self.access_token, "name": name}
         response = requests.get(self.url, params=params)
+        assert response.status_code == 200
+
+        # Update user with put request, status code is 200
+        data = {"gender": "female"}
+        params = {"format": self.format, "access-token": self.access_token, "name": name}
+        response = requests.put(self.url + str(user_id), params=params, data=data)
+        assert response.status_code == 200
+
+        # Update user with patch request, status code is 200
+        data = {"gender": "male"}
+        params = {"format": self.format, "access-token": self.access_token, "name": name}
+        response = requests.patch(self.url + str(user_id), params=params, data=data)
+        print(response.json())
         assert response.status_code == 200
 
         # Try to get a user, status code is 400
@@ -57,16 +68,16 @@ class Test(object):
         assert response.status_code == 400
 
         # Try to create an existing user, status code is 422
-        params = {"format":self.format,"access-token":self.access_token,}
+        params = {"format": self.format, "access-token": self.access_token}
         response = requests.post(self.url, params=params, data=data)
         assert response.status_code == 422
 
         # Try to create a user with wrong token, status code is 401
-        params = {"format":self.format,"access-token":"safa",}
+        params = {"format": self.format, "access-token": "safa"}
         response = requests.post(self.url, params=params, data=data)
         assert response.status_code == 401
 
-    # Delete a user, status code is 204
-        params = {"format":self.format,"access-token":self.access_token}
+        # Delete user, status code is 204
+        params = {"format": self.format, "access-token": self.access_token}
         response = requests.delete(self.url + str(user_id), params=params)
         assert response.status_code == 204
