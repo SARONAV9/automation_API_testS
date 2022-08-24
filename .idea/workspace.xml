@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b130598-fb3b-48f6-bc4d-156a3b656f55" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/automation_API_tests.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/automation_API_tests.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gorest_Requests/test_gorest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gorest_Requests/test_gorest.py" afterDir="false" />
     </list>
@@ -27,15 +25,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/saro/Desktop/automation_API_tests/Pipfile&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/saro/Desktop/automation_API_tests",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
-  <component name="RunManager" selected="Python tests.Python tests for test_gorest.Test_gorest">
+}]]></component>
+  <component name="RunManager" selected="Python tests.Python tests for test_gorest.Tests.test_requests">
     <configuration name="Python tests for test_gorest.Test" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="automation_API_tests" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -78,7 +76,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_gorest.Test.test_delete_a_user" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_gorest.Tests" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="automation_API_tests" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -88,11 +86,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_gorest.Test.test_delete_a_user&quot;" />
+      <option name="_new_target" value="&quot;test_gorest.Tests&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_gorest.Test.test_get_a_user" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_gorest.Tests.test_requests" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="automation_API_tests" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -102,17 +100,17 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_gorest.Test.test_get_a_user&quot;" />
+      <option name="_new_target" value="&quot;test_gorest.Tests.test_requests&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_gorest.Tests.test_requests" />
+        <item itemvalue="Python tests.Python tests for test_gorest.Tests" />
         <item itemvalue="Python tests.Python tests for test_gorest.Test_gorest" />
         <item itemvalue="Python tests.Python tests for test_gorest.Test" />
         <item itemvalue="Python tests.Python tests for test_gorest.Test.test_create_a_user" />
-        <item itemvalue="Python tests.Python tests for test_gorest.Test.test_delete_a_user" />
-        <item itemvalue="Python tests.Python tests for test_gorest.Test.test_get_a_user" />
       </list>
     </recent_temporary>
   </component>
